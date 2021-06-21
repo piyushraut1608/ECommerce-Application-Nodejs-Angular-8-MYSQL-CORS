@@ -1,0 +1,76 @@
+<div class="row mt-5">
+    <div class="col-md-12">
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true" class="mt-5">
+            
+            <!--Card content-->
+            <mdb-card-body>
+                <!--Call to action-->
+                <div class="pt-4">
+                    <div class="pt-4">
+                        <a routerLink="/department/add-department" routerLinkActive="active" class="btn btn-register" >Add</a>
+                        
+                        <button class="btn btn-register float-right" (click)="removeAllDepartment()">
+                            Delete All
+                        </button>
+                    </div>
+                </div>
+
+                <h3 class="mt-5 text-left"><strong>Departments</strong></h3>
+                <!--Table-->
+                <table class="table">
+
+                    <!--Table head-->
+                    <thead class="mdb-color darken-3">
+                    <tr class="text-white">
+                        <th>Department ID</th>
+                        <th>Department Name</th>
+                        <th>Description </th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                    </thead>
+                    <!--Table head-->
+
+                    <!--Table body-->
+                    <tbody > 
+                        <tr *ngFor="let department of departmentLists; index as i">
+                            <th scope="row" >{{department.department_id}}</th>
+                            <td>{{department.name}}</td>
+                            <td>{{department.description}}</td>
+                            <td>
+                                <!-- Focus on department_id between department-table.html and edit-department.html -->
+                                <!-- Please check on app-routing.module.ts for 'department/edit-department/:department_id'-->
+                                <a routerLink="/department/edit-department/{{ department.department_id }}" class="btn">Edit</a>
+                            </td>
+                            <td>
+                                <button type="submit" class="btn btn-register float-right" (click)="deleteDepartment()">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+
+                    <!-- OR -->
+                    <!-- <tbody>
+                        <tr *ngFor="let department of departmentList; index as i">
+                            <th scope="row" >{{department.DepartmentId}}</th>
+                            <td>{{department.Name}}</td>
+                            <td>{{department.Description}}</td>
+                            <td>
+                                <a href="department/edit-department" class="btn">Edit</a>
+                            </td>
+                            <td><a href="" class="btn">Delete</a></td>
+                        </tr>
+                    </tbody> -->
+
+                    <!--Table body-->
+                </table>
+
+            </mdb-card-body>
+            <!--/.Card content-->
+        </mdb-card>
+        <!--/.Card-->
+    </div>
+</div>

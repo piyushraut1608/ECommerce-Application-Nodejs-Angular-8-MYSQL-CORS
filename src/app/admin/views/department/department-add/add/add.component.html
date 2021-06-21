@@ -1,0 +1,45 @@
+<div class="row mt-5">
+    <div class="col-md-12">
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true" class="mt-5">
+            <!--/Card image-->
+            <!--Card content-->
+            <mdb-card-body>
+                <h3 class="mt-5 text-left"><strong>Add</strong></h3>
+                <!--Table-->
+                <form>
+                    <div *ngIf="!submitted" class=" mt-0">
+                        <input type="text" class="form-control is-invalid" placeholder="Department Name"
+                        type="text" class="form-control" id="name" equired
+                            [(ngModel)]="department.name" name="name">
+                        
+                        <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                            <div *ngIf="f.name.errors.required">Department Name</div>
+                        </div>
+                    </div>
+                    <div *ngIf="!submitted" class=" mt-0">
+                        <input type="text" class="form-control is-invalid" placeholder="Message here"
+                        type="text" class="form-control" id="description" equired
+                            [(ngModel)]="department.description" name="description">
+
+                        <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+                            <div *ngIf="f.description.errors.required">Description</div>
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <a routerLink="/department/" routerLinkActive="active" class="btn btn-register" >Continuing</a>
+                        <button type="submit" class="btn btn-register float-right" (click)="saveDepartments()">Submit</button>
+                    </div>
+                </form>
+
+                <div *ngIf="submitted">
+                    <h4>You submitted successfully!</h4>
+                    <button class="btn btn-success" (click)="newDepartments()">Add</button>
+                </div>
+
+            </mdb-card-body>
+        </mdb-card>
+        <!--/.Card-->
+    </div>
+</div>

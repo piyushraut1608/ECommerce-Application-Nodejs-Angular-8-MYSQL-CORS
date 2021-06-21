@@ -1,0 +1,38 @@
+<div class="row mt-5">
+    <div class="col-md-12">
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true" class="mt-5">
+            <!--/Card image-->
+            <!--Card content-->
+            <mdb-card-body>
+                <h3 class="mt-5 text-left"><strong>Edit</strong></h3>
+                <!--Table-->
+                <form *ngIf="department">
+                    <div class=" mt-0">
+                        <input type="text" type="text" class="form-control"
+                            department_id = "name"
+                            [(ngModel)]="department.name" name="name">
+                    </div>
+                    
+                    <div class=" mt-0">
+                        <input type="text" type="text" class="form-control"
+                            department_id = "description"
+                            [(ngModel)]="department.description" name="description">
+                    </div>
+
+                    <div class="form-check">
+                        <a routerLink="/department/" routerLinkActive="active" class="btn btn-register" >Continuing</a>
+                        <button type="submit" class="btn btn-register float-right" (click)="editDepartment()">Submit</button>
+                        <p>{{ message }}</p>
+                    </div>
+                    
+                </form>
+                <div *ngIf="!department">
+                    <br />
+                    <p>Cannot access this Department...</p>
+                  </div>
+            </mdb-card-body>
+        </mdb-card>
+        <!--/.Card-->
+    </div>
+</div>

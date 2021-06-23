@@ -8,9 +8,10 @@ Developing a **ShoppingCart (Ecommerce) Application using Angular8**.
 - Technology for Frontend: HTML, MDBootstrap, CSS, Angular-8, Firebase, Nodejs, Express.js .
 - Database : My-sql. 
 
-# $ git clone https://github.com/ijc3093/ECommerce-Application-Nodejs-Angular-8-MYSQL-CORS.git 
-# or clone your own fork 
-# or using desktop git
+# How to clone the project from GitHub
+- git clone https://github.com/ijc3093/ECommerce-Application-Nodejs-Angular-8-MYSQL-CORS.git 
+- or clone your own fork 
+- or using desktop git
 
 # Database (MYSQL)
 1. Make sure that you should install mysql: https://downloads.mysql.com/archives/community/

@@ -55,10 +55,10 @@ $ cd backend
 $ npm install
 $ npm start
 
-
-# Open terminal or shell and type: "sudo npm install -g @angular/cli@8.0.2" and press enter 
-# Make sure that check with package about 8.0.0 0r 8.0.2
-# Then your frontend app should now be running on [localhost:4200](http://localhost:4200/).
+# How to run frontend
+- Open terminal or shell and type: "sudo npm install -g @angular/cli@8.0.2" and press enter 
+- Make sure that check with package about 8.0.0 0r 8.0.2
+- Then your frontend app should now be running on [localhost:4200](http://localhost:4200/).
 
 ## Functionalities For Client
 1. Users can view all items when entering the website

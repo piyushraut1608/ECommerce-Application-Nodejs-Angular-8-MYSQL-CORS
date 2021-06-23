@@ -43,8 +43,8 @@ If you want to see all data on browse, you can see at http://localhost:8080/depa
 - Gaurds etc..
 
 
-```sh
-$ git clone https://github.com/ijc3093/ECommerce-Application-Nodejs-Angular-8-MYSQL-CORS.git # or clone your own fork
+$ git clone https://github.com/ijc3093/ECommerce-Application-Nodejs-Angular-8-MYSQL-CORS.git # or clone your own fork or using desktop git
+
 $ Restore database file on /database/shopping.sql
 $ Configure your firebase configuration on backend application
 $ Activate Firebase Authentication Providers
@@ -54,7 +54,7 @@ $ npm start
 $ cd backend
 $ npm install
 $ npm start
-```
+
 
 Open terminal or shell and type: "sudo npm install -g @angular/cli@8.0.2" and press enter 
 Then your frontend app should now be running on [localhost:4200](http://localhost:4200/).
@@ -69,5 +69,19 @@ Then your frontend app should now be running on [localhost:4200](http://localhos
 7. Users can register/login using using firebase authentication
 8. Users can update personal profiles with shipping addresses and other info
 9. Users can checkout with Paypal payment gateway
+
+
+
+## Functionalities For Admin
+1. User can view all items when entering the website
+2. Items are displayed properly based on the selected department and category
+3. User can search items through search box
+4. Support paging if we have too many items
+5. User can see item details by selecting a specific item
+6. User can register/login using using firebase authentication
+7. User can add new item
+8. User can edit item
+9. User can delete a specific item
+10. User can delete all items
 
 All changes in the code will be immediately reflected in your browser by [browser-sync](http://browsersync.io/)

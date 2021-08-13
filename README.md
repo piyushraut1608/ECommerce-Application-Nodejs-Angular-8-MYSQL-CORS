@@ -26,7 +26,8 @@ Next step...
 
 
 ## Functionalities For Backend
-- Open another terminal or shell and type: "node server.js"
+- Open another terminal or shell and drag backend into terminal.
+- And type: "node server.js"
 - Your backend app should now be running on [localhost:8080](http://localhost:8080/).
 - If you want to see all data on browse, you can see at http://localhost:8080/department
 
